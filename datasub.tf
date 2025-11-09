@@ -9,6 +9,8 @@ output "current_sub_id" {
   value = data.azurerm_subscription.current.subscription_id
 }
 output "subscription_cost" {
-  value = data.azurerm_subscription.current.spending_limit.
-  
+  value = data.azurerm_subscription.current.spending_limit
+}
+output "subscription_tenant_id" {
+  value = data.azurerm_subscription.current.tenant_id
 }
